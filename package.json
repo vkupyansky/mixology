@@ -1,0 +1,48 @@
+{
+  "name": "mixology",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.10.0",
+  "engines": {
+    "node": ">=24.18.0 <25",
+    "pnpm": "11.10.0"
+  },
+  "scripts": {
+    "dev": "node --import ./scripts/strict.mjs --env-file=.env backend/server.js",
+    "dev:web": "vite --host 127.0.0.1",
+    "db:setup": "node --import ./scripts/strict.mjs --env-file=.env scripts/setup-db.mjs",
+    "build": "vite build",
+    "start": "node --import ./scripts/strict.mjs --env-file=.env backend/server.js",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import ./scripts/strict.mjs --test test/api.test.js",
+    "test:db": "node --import ./scripts/strict.mjs --test test/database.test.js",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm test:db && pnpm audit --audit-level=low"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.5",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/express": "5.0.6",
+    "@types/node": "24.13.3",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.2.1",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.14.0",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.6"
+  }
+}

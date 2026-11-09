@@ -1,0 +1,688 @@
+{
+    "brands": [{"id": 1, "name": "Darkside"}],
+    "tags": [
+        {"id": 1, "name": "Алкоголь"},
+        {"id": 2, "name": "Гастрономия"},
+        {"id": 3, "name": "Десерт"},
+        {"id": 4, "name": "Напиток"},
+        {"id": 5, "name": "Орехи"},
+        {"id": 6, "name": "Свежий"},
+        {"id": 7, "name": "Сладкий"},
+        {"id": 8, "name": "Сливочный"},
+        {"id": 9, "name": "Специи"},
+        {"id": 10, "name": "Терпкий"},
+        {"id": 11, "name": "Травянистый"},
+        {"id": 12, "name": "Фрукты"},
+        {"id": 13, "name": "Цветочный"},
+        {"id": 14, "name": "Цитрус"},
+        {"id": 15, "name": "Чай"},
+        {"id": 16, "name": "Ягоды"}
+    ],
+    "flavors": [
+        {
+            "id": 1,
+            "brand_id": 1,
+            "name": "Basil blast",
+            "description": "Свежий вкус душистого зеленого базилика",
+            "tags": [11, 6]
+        },
+        {
+            "id": 2,
+            "brand_id": 1,
+            "name": "Needls",
+            "description": "Свежий хвойный аромат с легкой горечью и смолистым оттенком",
+            "tags": [6, 11]
+        },
+        {
+            "id": 3,
+            "brand_id": 1,
+            "name": "Bergamonstr",
+            "description": "Пряный и слегка терпкий вкус спелого бергамота.",
+            "tags": [14]
+        },
+        {
+            "id": 4,
+            "brand_id": 1,
+            "name": "Dark passion",
+            "description": "Вкус кисло-сладкой маракуйи с тонкими терпкими нотками.",
+            "tags": [11, 7, 12]
+        },
+        {
+            "id": 5,
+            "brand_id": 1,
+            "name": "Honey dust",
+            "description": "Сладкий вкус натурального цветочного меда с тонкими терпкими нотками",
+            "tags": [7, 13]
+        },
+        {
+            "id": 6,
+            "brand_id": 1,
+            "name": "Mango lassi",
+            "description": "Яркий сладкий аромат густого шейка из мякоти спелого манго",
+            "tags": [11, 7, 12]
+        },
+        {
+            "id": 7,
+            "brand_id": 1,
+            "name": "Cola",
+            "description": "Бодрящий освежающий вкус колы с долькой лимона.",
+            "tags": [4]
+        },
+        {
+            "id": 8,
+            "brand_id": 1,
+            "name": "Breaking red",
+            "description": "Яркий вкус сладкого граната с легкой кислинкой",
+            "tags": [11, 10, 12]
+        },
+        {
+            "id": 9,
+            "brand_id": 1,
+            "name": "Cherry rocks",
+            "description": "Насыщенный вкус вишневых леденцов с ярко выраженным кислым послевкусием.",
+            "tags": [16]
+        },
+        {
+            "id": 10,
+            "brand_id": 1,
+            "name": "Deus",
+            "description": "Аромат односолодового островного виски с ярко выраженным дымным оттенком",
+            "tags": [1]
+        },
+        {
+            "id": 11,
+            "brand_id": 1,
+            "name": "Kalee grapefruit",
+            "description": "Кисло-сладкий аромат грейпфрута с терпким послевкусием",
+            "tags": [14, 10]
+        },
+        {
+            "id": 12,
+            "brand_id": 1,
+            "name": "Salbei",
+            "description": "Терпкий, травянистый аромат свежих листьев шалфея.",
+            "tags": [9, 11]
+        },
+        {
+            "id": 13,
+            "brand_id": 1,
+            "name": "Kashmir Goa Java",
+            "description": "Терпкий аромат гуавы с выраженным послевкусием индийских специй",
+            "tags": [12, 9]
+        },
+        {
+            "id": 14,
+            "brand_id": 1,
+            "name": "Unity",
+            "description": "Яркое сочетание персика, винограда и черной смородины с нотками клубники и ананаса.",
+            "tags": [12, 16]
+        },
+        {
+            "id": 15,
+            "brand_id": 1,
+            "name": "Deep blue sea",
+            "description": "Нежный вкус традиционного сахарного печенья со сливочными нотками",
+            "tags": [8, 3]
+        },
+        {
+            "id": 16,
+            "brand_id": 1,
+            "name": "Pineapple pulse",
+            "description": "Сочный ананасовый вкус",
+            "tags": [12]
+        },
+        {
+            "id": 17,
+            "brand_id": 1,
+            "name": "Cinnamoon",
+            "description": "Вкус корицы",
+            "tags": [9]
+        },
+        {
+            "id": 18,
+            "brand_id": 1,
+            "name": "Falling star",
+            "description": "Вкус сладкого манго с освежающей маракуйей в тропическом коктейле",
+            "tags": [12]
+        },
+        {
+            "id": 19,
+            "brand_id": 1,
+            "name": "RAF in the Jungle",
+            "description": "Мягкий сливочно-шоколадный вкус кофе Раф с апельсиновой цедрой",
+            "tags": [14, 8]
+        },
+        {
+            "id": 20,
+            "brand_id": 1,
+            "name": "Darksupra",
+            "description": "Вкус традиционного японского зеленого чая Сенча с тонкой ноткой жасмина",
+            "tags": [13]
+        },
+        {
+            "id": 21,
+            "brand_id": 1,
+            "name": "Cream soda",
+            "description": "Сладкий, слегка освежающий аромат сливочной газировки с ноткой ванили",
+            "tags": [8]
+        },
+        {
+            "id": 22,
+            "brand_id": 1,
+            "name": "Bassberry",
+            "description": "Бузина с цветочными нотками",
+            "tags": [11, 16]
+        },
+        {
+            "id": 23,
+            "brand_id": 1,
+            "name": "Crystal grape",
+            "description": "Сладкий, слегка освежающий аромат спелого белого винограда.",
+            "tags": [16, 6]
+        },
+        {
+            "id": 24,
+            "brand_id": 1,
+            "name": "Cosmos",
+            "description": "Знаменитый вкус классического коктейля с добавлением цитрусового ликера и клюквенного морса.",
+            "tags": [14, 16]
+        },
+        {
+            "id": 25,
+            "brand_id": 1,
+            "name": "Red rush",
+            "description": "Насыщенный сладкий вкус барбарисовых конфет.",
+            "tags": [16]
+        },
+        {
+            "id": 26,
+            "brand_id": 1,
+            "name": "Polar cream",
+            "description": "Мягкий и насыщенный вкус фисташкового мороженого.",
+            "tags": [3, 5]
+        },
+        {
+            "id": 27,
+            "brand_id": 1,
+            "name": "Desert eagle",
+            "description": "Сладкий аромат кактуса с терпким послевкусием",
+            "tags": [11]
+        },
+        {
+            "id": 28,
+            "brand_id": 1,
+            "name": "Glitch ice tea",
+            "description": "Освежающий вкус прохладного персикового чая",
+            "tags": [13, 12]
+        },
+        {
+            "id": 29,
+            "brand_id": 1,
+            "name": "Ice granny",
+            "description": "Насыщенный вкус спелого зеленого яблока Гренни Смит.",
+            "tags": [12]
+        },
+        {
+            "id": 30,
+            "brand_id": 1,
+            "name": "Nordberry",
+            "description": "Охлажденный кисло-сладкий морс из ягод клюквы.",
+            "tags": [16]
+        },
+        {
+            "id": 31,
+            "brand_id": 1,
+            "name": "Dark spirit",
+            "description": "Неповторимое сочетание сочного лайма и текилы в освежающем коктейле «Маргарита»",
+            "tags": [1]
+        },
+        {
+            "id": 32,
+            "brand_id": 1,
+            "name": "Space desert",
+            "description": "Вкус пирожного тирамису.",
+            "tags": [3]
+        },
+        {
+            "id": 33,
+            "brand_id": 1,
+            "name": "Neonmelon",
+            "description": "Арбуз",
+            "tags": [12]
+        },
+        {
+            "id": 34,
+            "brand_id": 1,
+            "name": "Mary Jane",
+            "description": "Травянистый вкус",
+            "tags": [11]
+        },
+        {
+            "id": 35,
+            "brand_id": 1,
+            "name": "Goal",
+            "description": "Насыщенный вкус сладкого черничного энергетика с легкой свежестью",
+            "tags": [16, 6, 4]
+        },
+        {
+            "id": 36,
+            "brand_id": 1,
+            "name": "Cosmo flower",
+            "description": "Яркий цветочный аромат с ягодным послевкусием.",
+            "tags": [13, 16]
+        },
+        {
+            "id": 37,
+            "brand_id": 1,
+            "name": "Tropic ray",
+            "description": "Карибский коктейль из тропических фруктов на основе кокоса и ананаса",
+            "tags": [8, 12]
+        },
+        {
+            "id": 38,
+            "brand_id": 1,
+            "name": "Red tea",
+            "description": "Пряный аромат крепкого красного чая каркаде.",
+            "tags": [15]
+        },
+        {
+            "id": 39,
+            "brand_id": 1,
+            "name": "Barvy orange",
+            "description": "Яркий летний аромат освежающего апельсинового фреша.",
+            "tags": [14]
+        },
+        {
+            "id": 40,
+            "brand_id": 1,
+            "name": "Pomelow",
+            "description": "Насыщенный аромат сладкого помело с характерной терпкой ноткой.",
+            "tags": [14]
+        },
+        {
+            "id": 41,
+            "brand_id": 1,
+            "name": "Spicy pear",
+            "description": "Вкус груши со специями.",
+            "tags": [9, 12]
+        },
+        {
+            "id": 42,
+            "brand_id": 1,
+            "name": "Bananapapa",
+            "description": "Яркий и насыщенный вкус спелого сладкого банана",
+            "tags": [12]
+        },
+        {
+            "id": 43,
+            "brand_id": 1,
+            "name": "Killer milk",
+            "description": "Насыщенный сладкий вкус сгущенного молока.",
+            "tags": [8]
+        },
+        {
+            "id": 44,
+            "brand_id": 1,
+            "name": "Fruittallity",
+            "description": "Вкус сладких жевательных конфет с соком лесных ягод.",
+            "tags": [8, 16]
+        },
+        {
+            "id": 45,
+            "brand_id": 1,
+            "name": "Lemonblast",
+            "description": "Освежающий кислый аромат спелого лимона с легкой горчинкой.",
+            "tags": [14]
+        },
+        {
+            "id": 46,
+            "brand_id": 1,
+            "name": "Admiral acbar cereal",
+            "description": "Сливочный вкус сладкой овсяной каши с ягодами.",
+            "tags": [16, 2]
+        },
+        {
+            "id": 47,
+            "brand_id": 1,
+            "name": "Generis raspberry",
+            "description": "Нежный сладкий аромат спелых ягод малины",
+            "tags": [16]
+        },
+        {
+            "id": 48,
+            "brand_id": 1,
+            "name": "Waffle shuffle",
+            "description": "Аромат хрустящих лимонных вафель со сливочным оттенком.",
+            "tags": [14, 3, 8]
+        },
+        {
+            "id": 49,
+            "brand_id": 1,
+            "name": "Blueberry blast",
+            "description": "Мягкий гармоничный вкус свежей лесной черники",
+            "tags": [16]
+        },
+        {
+            "id": 50,
+            "brand_id": 1,
+            "name": "Green beam",
+            "description": "В меру сладкий, мягкий и чуть вяжущий вкус плодов фейхоа",
+            "tags": [12]
+        },
+        {
+            "id": 51,
+            "brand_id": 1,
+            "name": "Eclipse",
+            "description": "Сладкий вкус меда.",
+            "tags": [3]
+        },
+        {
+            "id": 52,
+            "brand_id": 1,
+            "name": "Rivers of blood",
+            "description": "Вкус коктейля кровавая Мери: томатный сок, специи и водка",
+            "tags": [1, 2, 9]
+        },
+        {
+            "id": 53,
+            "brand_id": 1,
+            "name": "Extragon",
+            "description": "Вкус тархуна",
+            "tags": [11]
+        },
+        {
+            "id": 54,
+            "brand_id": 1,
+            "name": "Peperblast",
+            "description": "Вкус красного перца.",
+            "tags": [9]
+        },
+        {
+            "id": 55,
+            "brand_id": 1,
+            "name": "Red alert",
+            "description": "Сочная мякоть арбуза с нотками медовой дыни в освежающем безалкогольном напитке.",
+            "tags": [12]
+        },
+        {
+            "id": 56,
+            "brand_id": 1,
+            "name": "Wildberry",
+            "description": "Глубокий душистый аромат свежесобранных лесных ягод.",
+            "tags": [16]
+        },
+        {
+            "id": 57,
+            "brand_id": 1,
+            "name": "Grape core",
+            "description": "Богатый вкус мякоти спелого винограда.",
+            "tags": [16, 6]
+        },
+        {
+            "id": 58,
+            "brand_id": 1,
+            "name": "Pear",
+            "description": "Насыщенный аромат сладкого грушевого лимонада.",
+            "tags": [12]
+        },
+        {
+            "id": 59,
+            "brand_id": 1,
+            "name": "Space lychee",
+            "description": "Экзотический вкус нежной мякоти китайского личи.",
+            "tags": [12]
+        },
+        {
+            "id": 60,
+            "brand_id": 1,
+            "name": "Nutz",
+            "description": "Вкус лесного ореха",
+            "tags": [5]
+        },
+        {
+            "id": 61,
+            "brand_id": 1,
+            "name": "Cookie",
+            "description": "Вкус печенья с шоколадом.",
+            "tags": [3]
+        },
+        {
+            "id": 62,
+            "brand_id": 1,
+            "name": "Skylime",
+            "description": "Вкус лайма с мятой.",
+            "tags": [14, 6]
+        },
+        {
+            "id": 63,
+            "brand_id": 1,
+            "name": "Fruity dust",
+            "description": "Сложный аромат сочных экзотических фруктов с преобладанием питахайи.",
+            "tags": [12]
+        },
+        {
+            "id": 64,
+            "brand_id": 1,
+            "name": "Astro tea",
+            "description": "Вкус зеленого чая с лимоном.",
+            "tags": [14, 15]
+        },
+        {
+            "id": 65,
+            "brand_id": 1,
+            "name": "Blackout",
+            "description": "Сладость сливочного мороженого с послевкусием спелого банана.",
+            "tags": [12, 3, 8]
+        },
+        {
+            "id": 66,
+            "brand_id": 1,
+            "name": "Wild forest",
+            "description": "Вкус лесных ягод.",
+            "tags": [16]
+        },
+        {
+            "id": 67,
+            "brand_id": 1,
+            "name": "Guava rebel",
+            "description": "Насыщенный вкус сочной мякоти гуавы со слегка терпким оттенком.",
+            "tags": [12]
+        },
+        {
+            "id": 68,
+            "brand_id": 1,
+            "name": "Cucumstar",
+            "description": "Вкус огуречного фреша.",
+            "tags": [2]
+        },
+        {
+            "id": 69,
+            "brand_id": 1,
+            "name": "Generis cherry",
+            "description": "Вкус вишни",
+            "tags": [16]
+        },
+        {
+            "id": 70,
+            "brand_id": 1,
+            "name": "Bounty hunter",
+            "description": "Нежный, слегка сливочный вкус тропического кокоса.",
+            "tags": [12]
+        },
+        {
+            "id": 71,
+            "brand_id": 1,
+            "name": "Dark icecream",
+            "description": "Мягкий вкус сливочного мороженого с шоколадной крошкой.",
+            "tags": [3, 8]
+        },
+        {
+            "id": 72,
+            "brand_id": 1,
+            "name": "Virgin melon",
+            "description": "Богатый вкус нежной мякоти сочной сахарной дыни.",
+            "tags": [12]
+        },
+        {
+            "id": 73,
+            "brand_id": 1,
+            "name": "Applecot",
+            "description": "Вкус компота из зеленого яблока и абрикосов.",
+            "tags": [12]
+        },
+        {
+            "id": 74,
+            "brand_id": 1,
+            "name": "Red zeppelin",
+            "description": "Кисло-сладкие и терпкие ягоды красного крыжовника.",
+            "tags": [16]
+        },
+        {
+            "id": 75,
+            "brand_id": 1,
+            "name": "Space jam",
+            "description": "Вкус ягод клубники в сладком сиропе.",
+            "tags": [16]
+        },
+        {
+            "id": 76,
+            "brand_id": 1,
+            "name": "Black Currant",
+            "description": "Терпкий аромат спелых ягод черной смородины.",
+            "tags": [16]
+        },
+        {
+            "id": 77,
+            "brand_id": 1,
+            "name": "Torpedo",
+            "description": "Сладкий, но освежающий классический аромат спелой дыни и арбуза.",
+            "tags": [12]
+        },
+        {
+            "id": 78,
+            "brand_id": 1,
+            "name": "Cyber kiwi",
+            "description": "Яркий вкус сладкого смузи из спелых плодов киви с кислыми нотками.",
+            "tags": [12]
+        },
+        {
+            "id": 79,
+            "brand_id": 1,
+            "name": "Code cherry",
+            "description": "Натуральный вкус кисло-сладкой спелой вишни",
+            "tags": [16]
+        },
+        {
+            "id": 80,
+            "brand_id": 1,
+            "name": "Sweet comet",
+            "description": "Освежающий аромат спелой клюквы с ноткой банана.",
+            "tags": [16, 12]
+        },
+        {
+            "id": 81,
+            "brand_id": 1,
+            "name": "Virgin peach",
+            "description": "Бархатистый вкус мякоти спелого медового персика.",
+            "tags": [12]
+        },
+        {
+            "id": 82,
+            "brand_id": 1,
+            "name": "BlackBerry",
+            "description": "Сладкий аромат свежесобранной ежевики.",
+            "tags": [16]
+        },
+        {
+            "id": 83,
+            "brand_id": 1,
+            "name": "Green mist",
+            "description": "Свежий цитрусовый коктейль с алкогольной ноткой.",
+            "tags": [1, 14]
+        },
+        {
+            "id": 84,
+            "brand_id": 1,
+            "name": "Redberry",
+            "description": "Яркий аромат спелой грозди красной смородины с кислинкой.",
+            "tags": [16]
+        },
+        {
+            "id": 85,
+            "brand_id": 1,
+            "name": "Strawberry light",
+            "description": "Нежный, сладкий аромат спелой садовой клубники.",
+            "tags": [16]
+        },
+        {
+            "id": 86,
+            "brand_id": 1,
+            "name": "Gonzo cake",
+            "description": "Вкус чизкейка.",
+            "tags": [3]
+        },
+        {
+            "id": 87,
+            "brand_id": 1,
+            "name": "Barvy citrus",
+            "description": "Освежающий аромат в цитрусовом миксе апельсина, лимона и грейпфрута.",
+            "tags": [14]
+        },
+        {
+            "id": 88,
+            "brand_id": 1,
+            "name": "Barberry gum",
+            "description": "Вкус барбарисовой жвачки.",
+            "tags": [16]
+        },
+        {
+            "id": 89,
+            "brand_id": 1,
+            "name": "Pinestar",
+            "description": "Вкус ананаса",
+            "tags": [12]
+        },
+        {
+            "id": 90,
+            "brand_id": 1,
+            "name": "Gingerblast",
+            "description": "Вкус имбиря",
+            "tags": [9]
+        },
+        {
+            "id": 91,
+            "brand_id": 1,
+            "name": "French macaroon",
+            "description": "Знаменитый французский десерт макарун.",
+            "tags": [3]
+        },
+        {
+            "id": 92,
+            "brand_id": 1,
+            "name": "Ginger Ale Cookies",
+            "description": "Вкус имбирного печенья.",
+            "tags": [3, 9]
+        },
+        {
+            "id": 93,
+            "brand_id": 1,
+            "name": "Dark mint",
+            "description": "Сладкий, глубокий и насыщенный аромат с яркой ментоловой окраской.",
+            "tags": [6]
+        },
+        {
+            "id": 94,
+            "brand_id": 1,
+            "name": "Supernova",
+            "description": "Захватывающий дух, леденящий ментоловый холод.",
+            "tags": [6]
+        },
+        {
+            "id": 95,
+            "brand_id": 1,
+            "name": "Myata ot DS",
+            "description": "Вкус мяты",
+            "tags": [6]
+        }
+    ]
+}
