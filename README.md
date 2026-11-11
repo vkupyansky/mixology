@@ -1,23 +1,25 @@
+[![Русский](https://img.shields.io/badge/%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9-181717?style=for-the-badge)](README.ru.md)
+
 # Mixology
 
-Локальный редактор каталога вкусов. Показывает заполненность карточек и позволяет менять вкусовые характеристики. В исходном каталоге 95 вкусов Darkside.
+A local flavor catalog editor. Shows how complete each entry is and lets you edit flavor characteristics. The source catalog contains 95 Darkside flavors.
 
-## Возможности
+## Features
 
-- Просмотр каталога и отдельных карточек.
-- Редактирование описания, тегов, интенсивности, вкусового профиля и ароматических нот.
-- Хранение карточек в PostgreSQL и повторяемый импорт исходного каталога без потери правок.
+- Browse the catalog and individual entries.
+- Edit descriptions, tags, intensity, flavor profiles, and aromatic notes.
+- Store entries in PostgreSQL and repeatedly import the source catalog without losing edits.
 
-## Установка и запуск
+## Installation and startup
 
-Нужны Node.js 24 LTS, pnpm 11 и PostgreSQL 16 или новее. Используйте точные версии `engines` и `packageManager` из [package.json](package.json); зависимости закреплены в [pnpm-lock.yaml](pnpm-lock.yaml). Подготовьте отдельную БД и роль для проекта.
+Requires Node.js 24 LTS, pnpm 11, and PostgreSQL 16 or newer. Use the exact `engines` and `packageManager` versions in [package.json](package.json); dependencies are pinned in [pnpm-lock.yaml](pnpm-lock.yaml). Prepare a separate database and role for the project.
 
 ```bash
 pnpm install --frozen-lockfile
 node scripts/init-env.mjs
 ```
 
-В созданном `.env` задайте единственный обязательный параметр `DATABASE_URL`: PostgreSQL URL своей БД из [.env.example](.env.example). Сохраняйте права `0600`. Для удалённой БД включите проверку TLS-сертификата через `sslmode=verify-full`.
+In the generated `.env`, set the only required parameter, `DATABASE_URL`, to the PostgreSQL URL of your database using [.env.example](.env.example). Keep `0600` permissions. For a remote database, enable TLS certificate verification with `sslmode=verify-full`.
 
 ```bash
 pnpm db:setup
@@ -25,26 +27,26 @@ pnpm build
 pnpm start
 ```
 
-Откройте <http://127.0.0.1:3000>. Сервер слушает только loopback. `db:setup` создаёт отсутствующую таблицу и добавляет каталог из `data.json`; повторный запуск сохраняет карточки и внесённые правки.
+Open <http://127.0.0.1:3000>. The server listens only on loopback. `db:setup` creates the table if it is missing and imports the catalog from `data.json`; running it again preserves entries and your edits.
 
-Для разработки запустите `pnpm dev` и в отдельном терминале `pnpm dev:web`, затем откройте <http://127.0.0.1:5173>. Vite передаёт `/api` локальному серверу, секреты в браузер не передаются.
+For development, run `pnpm dev` and, in a separate terminal, `pnpm dev:web`, then open <http://127.0.0.1:5173>. Vite forwards `/api` to the local server; secrets are not sent to the browser.
 
-## Использование
+## Usage
 
-Откройте карточку, измените характеристики и сохраните. До ответа сервера поля блокируются. При ошибке введённые значения остаются в редакторе; успешное сохранение подтверждается только после ответа API.
+Open an entry, edit its characteristics, and save. Fields remain disabled until the server responds. If an error occurs, your input stays in the editor; a successful save is confirmed only after the API response.
 
-PostgreSQL хранит карточки, `data.json` содержит исходные бренды, теги и описания. Рабочая БД и `.env` в Git не входят.
+PostgreSQL stores the entries; `data.json` contains the source brands, tags, and descriptions. The production database and `.env` are excluded from Git.
 
-## Проверки
+## Checks
 
 ```bash
 pnpm check
 ```
 
-Команда выполняет проверку форматирования, ESLint без предупреждений, строгую проверку типов, API-тесты, сборку, изолированную PostgreSQL-проверку и аудит зависимостей. Для проверки БД нужен Docker: временный контейнер запускается из закреплённого образа и удаляется после теста.
+This checks formatting, ESLint with no warnings, strict types, API tests, the build, an isolated PostgreSQL check, and dependency advisories. The database check requires Docker: a temporary container starts from a pinned image and is removed after the test.
 
-PostgreSQL-проверка покрывает повторный импорт в существующую таблицу без нового UNIQUE, сохранность правок и полный цикл GET/PUT/GET. Отдельные команды: `pnpm test`, `pnpm test:db`, `pnpm build`.
+The PostgreSQL check covers repeated imports into an existing table without a new UNIQUE constraint, preservation of edits, and the full GET/PUT/GET cycle. Individual commands: `pnpm test`, `pnpm test:db`, `pnpm build`.
 
-## Ограничения
+## Limitations
 
-Пользовательских аккаунтов нет; публичный доступ требует отдельной авторизации перед приложением. Одновременное редактирование одной карточки несколькими людьми не согласуется автоматически. Проверки не обращаются к рабочим данным; публичное размещение и работа с прежней БД ими не подтверждаются.
+There are no user accounts; public access requires separate authentication in front of the application. Simultaneous edits to the same entry by multiple people are not reconciled automatically. Checks do not access production data; they do not verify public deployment or operation with an existing database.
